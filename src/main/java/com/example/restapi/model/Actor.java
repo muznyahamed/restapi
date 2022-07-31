@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
-public class Movie {
+public class Actor {
 
     @Id // we define this is an id this is an apring boot annotation
     private String id;  //this cannot be accesed out of the clas
@@ -12,7 +12,7 @@ public class Movie {
     private String category;
     private String rating;
 
-    public Movie() {
+    public Actor() {
     }
 
     public String getId() {
@@ -24,7 +24,7 @@ public class Movie {
     }
 
     public String getName() {
-         return name; // get the name
+        return name; // get the name
     }
 
     public void setName(String name) {
